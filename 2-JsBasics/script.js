@@ -39,7 +39,7 @@ job = 'Driver';
 
 var lastName = prompt('What is his last name?');
 console.log(firstName + ' ' + lastName);
-*/
+
 
 //BASIC OPERATORS
 //Math Operators
@@ -65,3 +65,65 @@ console.log(typeof ageJohn);
 console.log(typeof 'Murat is older than John');
 var x;
 console.log(typeof x); //undefined
+
+
+//OPERATOR PRECEDENCE
+
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+//Multiple Operators
+var isFullAge = now - yearJohn >= fullAge;
+console.log(isFullAge);
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+
+//Grouping
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
+
+//Multiple Assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; //8*4-6 = 32-6=26 assignment operatoru sağdan sola doğru çalışır. Bu yüzden önce hesaplamalar yapıldı sonrasında sağdan sola bir eşitleme yapıldı.
+console.log(x, y);
+
+//More Operators
+x *= 2;
+console.log(x);
+x += 10;
+console.log(x);
+x++;
+console.log(x);
+x--;
+console.log(x);
+
+
+// IF-ELSE STATEMENTS
+var firstName = 'John';
+var civilStatus = 'single';
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married.');
+} else {
+    console.log(firstName + ' is single.');
+}
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married.');
+} else {
+    console.log(firstName + ' is single.');
+}
+*/
+
+//BOOLEAN LOGIC
+var firstName = 'John';
+var age = 20;
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age < 20 && age >= 13) {
+    console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');
+} else {
+    console.log(firstName + ' is a man.');
+}
