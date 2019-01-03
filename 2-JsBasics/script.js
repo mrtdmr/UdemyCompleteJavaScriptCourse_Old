@@ -113,7 +113,7 @@ if (isMarried) {
 } else {
     console.log(firstName + ' is single.');
 }
-*/
+
 
 //BOOLEAN LOGIC
 var firstName = 'John';
@@ -127,3 +127,61 @@ if (age < 13) {
 } else {
     console.log(firstName + ' is a man.');
 }
+
+//THE TERNARY OPERATOR AND SWITCH STATEMENTS
+
+//Ternary Operator:
+var firstName = "John";
+var age = 16;
+age >= 18
+  ? console.log(firstName + " drinks beer.")
+  : console.log(firstName + " drinks juice.");
+var drink = age >= 18 ? "beer" : "juice";
+console.log(drink);
+
+//Switch Statement:
+var job = "instructor";
+switch (job) {
+  case "teacher":
+  case "instructor":
+    console.log(firstName + " teaches kids how to code.");
+    break;
+  case "driver":
+    console.log(firstName + " drives an uber in Lisbon.");
+    break;
+  case "designer":
+    console.log(firstName + " designs web sites.");
+    break;
+  default:
+    console.log(firstName + " does something else.");
+}
+age = 40;
+switch (true) {
+  case age < 13:
+    console.log(firstName + " is a boy.");
+    break;
+  case age < 20 && age >= 13:
+    console.log(firstName + " is a teenager.");
+    break;
+  case age >= 20 && age < 30:
+    console.log(firstName + " is a young man.");
+    break;
+  default:
+    console.log(firstName + " is a man.");
+}
+
+
+//TRUTHY AND FALSY VALUES AND EQUALITY OPERATORS
+
+//Falsy Values : undefined,null,'',0,NaN
+//Truthy Values : NOT Falsy values
+var height = 0; // 0 normalde falsy değerdir. Fakat 0 için tanımlama yapmak istiyorsak bunu === ile yapabiliriz.
+if (height || height === 0) console.log("Variable is defined.");
+else console.log("Variable is NOT defined.");
+
+//Equality Operators:
+height = 23;
+if (height == "23") {
+  console.log("The  == operator does type coercion");
+} // == operatoru tip dönüştürme yapar. Burada string olan "23" number tipine dönüştürüldü. === operatorunde dönüştürme olmaz. 23==="23" false döndürcektir.
+*/
