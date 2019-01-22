@@ -200,4 +200,54 @@ function yearsUntilRetirement(year, firstName) {
     console.log(firstName + ' retires in ' + retirement + ' years');
 }
 yearsUntilRetirement(1984, 'Murat');
+
+
+//FUNCTION STATEMENTS AND EXPRESSIONS
+//Function Decleration
+//function (job, firstName) {}
+
+//Function Expression
+var whatDoYouDo = function (job, firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
+        case 'driver':
+            return firstName + ' drives a cab in Lizbon';
+        case 'designer':
+            return firstName + ' designs beautiful websites';
+        default:
+            return firstName + ' does something else';
+    }
+}
+console.log(whatDoYouDo('teacher', 'John'));
+
 */
+
+//ARRAYS
+//Initialize new array
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+console.log(names[0]);
+console.log(names);
+console.log(names.length);
+
+//Mutate array data
+names[1] = 'Ben';
+names[5] = 'Mary';
+console.log(names);
+console.log(names[4]);
+
+//Different data types
+var john = ['John', 'Smith', 1990, false];
+john.push('Blue'); //En sona ekler
+john.unshift('Mr.'); //En başa ekler
+
+console.log(john);
+john.pop(); //En sondan siler
+john.shift(); //En baştan siler
+console.log(john);
+
+console.log(john.indexOf(1990));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
+console.log(isDesigner);
