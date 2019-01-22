@@ -221,7 +221,7 @@ var whatDoYouDo = function (job, firstName) {
 }
 console.log(whatDoYouDo('teacher', 'John'));
 
-*/
+
 
 //ARRAYS
 //Initialize new array
@@ -251,3 +251,29 @@ console.log(john.indexOf(1990));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
 console.log(isDesigner);
+*/
+
+//OBJECTS AND PROPERTIES
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'Teacher',
+    isMarried: false
+};
+console.log(john);
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'Driver';
+john['isMarried'] = true;
+console.log(john);
+
+var jane = new Object();
+jane.firsName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
