@@ -251,9 +251,10 @@ console.log(john.indexOf(1990));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
 console.log(isDesigner);
-*/
+
 
 //OBJECTS AND PROPERTIES
+//Object Literal
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -272,8 +273,40 @@ john.job = 'Driver';
 john['isMarried'] = true;
 console.log(john);
 
+// new Object syntax
 var jane = new Object();
 jane.firsName = 'Jane';
 jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
 console.log(jane);
+*/
+
+//OBJECTS AND METHODS
+/*
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1984,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'Teacher',
+    isMarried: false,
+    calcAge: function () {
+        return 2019 - this.birthYear;
+    }
+};
+console.log(john.calcAge());
+john.age = john.calcAge();*/
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1984,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'Teacher',
+    isMarried: false,
+    calcAge: function () {
+        this.age = 2019 - this.birthYear; //this. means current object
+    }
+};
+john.calcAge();
+console.log(john);
