@@ -296,7 +296,7 @@ var john = {
 };
 console.log(john.calcAge());
 john.age = john.calcAge();*/
-
+/*
 var john = {
     firstName: 'John',
     lastName: 'Smith',
@@ -310,3 +310,32 @@ var john = {
 };
 john.calcAge();
 console.log(john);
+*/
+
+//LOOPS AND ITERATION
+/*
+for (var i = 0; i < 9; i++)
+    console.log(i);
+
+var john = ['John', 'Smith', 1990, false];
+for (var i = 0; i < john.length; i++) //Arrays are zero based.
+    console.log(john[i]);
+var john = ['John', 'Smith', 1990, false];
+var i = 0;
+while (i < john.length) {
+    console.log(john[i]);
+    i++;
+}
+
+
+// Continue and Break Statements
+var john = ['John', 'Smith', 1990, false, 'designer'];
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+*/
